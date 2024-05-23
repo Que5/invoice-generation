@@ -4,5 +4,5 @@ import glob
 filepaths = glob.glob("invoices/*xlsx")
 
 for filepath in filepaths:
-    df = pd.read_excel(filepath, sheet_name="book 1")
+    df = pd.read_excel(filepath, sheet_name="Sheet1")
     print(df)
